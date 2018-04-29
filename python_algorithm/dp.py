@@ -84,4 +84,9 @@ number = [1,1,1,1,10]
 content = 12
 res = bag_many(content,value,weight,number)
 print (res)
-    
+
+def max(a,b):
+    if a > b:
+	return a
+    else:
+	return b   

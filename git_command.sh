@@ -92,3 +92,7 @@ git diff branchName filepath  当前分支的文件与branchName 分支的文件
 
 git diff commitId filepath 与某一次提交进行比较
 
+git remote -v  查看当前远程仓库地址
+
+git remote rm origin   删除当前连接的远程仓库
+git remote add origin [url]  添加新的远程仓库地址

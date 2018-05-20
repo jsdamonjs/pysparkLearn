@@ -23,6 +23,17 @@
 
     #撤销修改操作，恢复到修改之前的，撤销add后位于工作区下进行的
     git checkout -- <file>
+    
+    #回退到上一个commit节点， 代码也发生了改变，变成上一次的
+    git reset –hard commit_id    
+    
+    #回退到上一个commit节点， 代码变更保留，再提交可以直接commit
+    git reset commit_id
+    
+    #撤销某一次commit(撤销会当做一次新的提交，之前commit仍在版本控制里)
+    git revert HEAD
+    git revert HEAD^ 
+    git revert commit-id
 
     #删除文件,并将文件放入暂存区
     git rm <file1> <file2>
